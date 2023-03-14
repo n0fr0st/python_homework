@@ -1,4 +1,4 @@
-biletNum = input()
+biletNum = input("Введите номер билета и программа покажет, счастливый ли он - ")
 summRight = 0
 summLeft = 0
 for i in range(int(len(biletNum)/2)):
