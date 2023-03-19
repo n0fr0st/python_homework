@@ -1,8 +1,10 @@
-summZhur = int(input("Введите общее число журавлей - "))
-zhurByBoys = int(summZhur/6)
-kateNum = int((zhurByBoys*2)*2)
+summa = int(input())
+diva = int(input())
+for x in range(summa):
+    for y in range(diva):
+        if x + y == summa and x * y == diva:
+            numx = x
+            numy = y
+print(f"ответ - числа {numy} и {numx}")
+            
 
-if kateNum + zhurByBoys*2 != summZhur:
-    print(f"Некорректное число, сумма всех сделаных журавлей ребятами, по условию задачи - {kateNum + zhurByBoys*2}, не соответсвует данному числу - {summZhur}")
-else :
-    print(f"Сережа и Петя сделали по {zhurByBoys}, а Катя - {kateNum} журавлей")
