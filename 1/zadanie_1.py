@@ -1,17 +1,12 @@
-import random
-coin = ["решка", "орел"]
-reshka = 0
-orel = 0
-n = int(input('Введите число монет - '))
-coinlist = list()
-for i in range(n):
-    coinlist.append(random.choice(coin))
-    print(coinlist[i])
-    if coinlist[i] == "решка":
-        reshka +=1
+def div_func(n, m):
+    if m == 0:
+        return 1
+    elif m == 1:
+        return n
     else:
-        orel +=1
-if reshka >= orel:
-    print(f"нужно перевернуть - {orel} монеток")
-else:
-    print(f"нужно перевернуть - {reshka} монеток")
+        return n*div_func(n, m-1) 
+
+n = int(input("Введите число - "))
+m = int(input("Введите степень - "))
+print(div_func(n,m))
+
